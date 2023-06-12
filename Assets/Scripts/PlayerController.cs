@@ -4,18 +4,23 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    
+
     public float runningSpeed;
     public float xSpeed;
     public float limitx;
 
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
+    {
+        SwipeCheck();
+    }
+
+    void SwipeCheck()
     {
         float newX = 0;
         float touchXDelta = 0;
